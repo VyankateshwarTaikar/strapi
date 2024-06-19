@@ -41,6 +41,5 @@ jobs:
         env:
           HOST: ${{ secrets.EC2_HOST }}
           USER: ${{ secrets.EC2_USER }}
-          KEY: ${{ secrets.EC2_KEY }}
         run: |
-          ssh -i ${{ secrets.EC2_HOST }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /home/ubuntu/strapi && yarn develop
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /home/ubuntu/strapi && yarn develop"
