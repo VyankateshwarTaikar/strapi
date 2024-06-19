@@ -26,6 +26,11 @@ jobs:
 
       - name: Build Strapi
         run: npm run build
+        
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SERVER_KEY }}
 
       - name: Deploy to Server
         env:
