@@ -34,8 +34,8 @@ jobs:
 
       - name: Deploy to EC2
         env:
-          HOST: ${{ secrets.EC2_HOST }}
-          USER: ${{ secrets.EC2_USER }}
-          KEY: ${{ secrets.EC2_KEY }}
+          HOST: ${{ secrets.SERVER_HOST }}
+          USER: ${{ secrets.SERVER_USER }}
+          KEY: ${{ secrets.SERVER_KEY }}
         run: |
-          ssh -i ${{ secrets.EC2_HOST }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /home/ubuntu/strapi && yarn develop"
+          ssh -i ${{ secrets.SERVER_HOST }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_KEY }} "cd /home/ubuntu/strapi && yarn develop"
