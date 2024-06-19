@@ -38,4 +38,4 @@ jobs:
           USERNAME: ${{ secrets.SERVER_USER }}
           KEY: ${{ secrets.SERVER_KEY }}
         run: |
-          ssh -i $KEY $USERNAME@$HOST "cd /home/user/.ssh/id_rsa && git pull && npm install && npm run build && pm2 restart strapi"
+          ssh -i $KEY $USERNAME@$HOST "cd cd /var/www/my-project && git pull && npm install && npm run build && pm2 restart strapi"
