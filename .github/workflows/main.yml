@@ -30,7 +30,7 @@ jobs:
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.EC2_KEY }}
+          ssh-private-key: ${{ secrets.SERVER_KEY }}
 
       - name: Deploy to EC2
         env:
