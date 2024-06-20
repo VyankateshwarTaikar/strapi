@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for strapi deployment
+name: CI/CD Pipeline for strapi deployment (Build & deploy)
 
 on:
   push:
