@@ -1,4 +1,4 @@
-# 🚀 Getting started with Strapi (API installation AWS )
+# 🚀 Getting started with Strapi (API Deployment on AWS )
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
@@ -107,11 +107,13 @@ So, now you done with manual deployment for strapi
 
 ## install git on server 
 sudo apt update
+
 sudo apt install git
 
 ## set up your Git username and email: 
 
 git config --global user.name "Your Name"
+
 git config --global user.email "your-email@example.com"
 
 ## Initialize a Git Repository
