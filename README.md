@@ -1,4 +1,4 @@
-![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)# 🚀 Getting started with Strapi (API installation AWS )
+# 🚀 Getting started with Strapi (API installation AWS )
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
@@ -38,8 +38,10 @@ npm -v  # Should return 10.7.0
 
 
 ## Install Yarn:
-sudo apt install curl
-![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/14824006-3941-4da0-996d-28ba65eec59d) 
+sudo apt install curl 
+
+![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/14824006-3941-4da0-996d-28ba65eec59d)  
+
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update
@@ -68,6 +70,7 @@ sudo npm install pm2 -g
 
 cd ~
 npx create-strapi-app strapi --quickstart 
+![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)
 
 press Y
 
@@ -91,10 +94,12 @@ http://localhost:1337/admin
 or 
 
 http://public_ip_of_instance:1337/admin
+
 example : http://16.171.110.197:1337/admin
-16.171.110.197
+
 
 ![Screenshot_3](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/1c8f1f3b-5487-46be-b399-d7c0f519aed9) 
+
 
 So, now you done with manual deployment for strapi 
 
