@@ -25,6 +25,9 @@ sudo apt install -y curl gnupg2 build-essential
 ## 1.installs nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ## 2.download and install Node.js (you may need to restart the terminal)
+
+sudo reboot
+
 nvm install 20
 
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
