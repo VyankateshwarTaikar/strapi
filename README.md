@@ -76,6 +76,7 @@ sudo npm install pm2 -g
 
 cd ~
 npx create-strapi-app strapi --quickstart 
+
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)
 
 press Y
