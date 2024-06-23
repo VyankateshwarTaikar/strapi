@@ -42,9 +42,12 @@ sudo apt install curl
 
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/14824006-3941-4da0-996d-28ba65eec59d)  
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - 
+
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
 sudo apt update
+
 sudo apt install -y yarn
 
 ## Verify the installation:
