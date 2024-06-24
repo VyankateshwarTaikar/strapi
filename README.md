@@ -75,6 +75,7 @@ sudo npm install pm2 -g
 ## 2.Next, make a new Strapi folder/project and provide any name.
 
 cd ~
+
 npx create-strapi-app strapi --quickstart 
 
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)
