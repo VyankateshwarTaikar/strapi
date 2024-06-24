@@ -85,7 +85,7 @@ press Y
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/051a8f80-0981-49c5-abf1-aa1be9759916) 
 
 
-choose skip and processed for the manual installation 
+choose 𝐬𝐤𝐢𝐩 and processed for the manual installation 
 
 ## note: If you are already done with installation then you can run where the project is crearted or project is stopped
 
