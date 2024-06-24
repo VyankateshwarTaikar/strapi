@@ -2,6 +2,11 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
+ 🌠𝐅𝐨𝐫𝐤 𝐭𝐡𝐢𝐬 𝐑𝐞𝐩𝐨 𝐚𝐧𝐝 𝐌𝐚𝐫𝐤 𝐚𝐬 𝐒𝐭𝐚𝐫 🌟 
+
+ 🔗 https://github.com/VyankateshwarTaikar/strapi.git
+ 
+
 ## Prerequisites to Install Strapi
 2 GB of RAM (The more, the better performance)
 
