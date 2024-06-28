@@ -91,7 +91,7 @@ npx -y create-strapi-app strapi --quickstart
 ## Firstly, you have to change the code from Package.json
 ```
 
-CODE Start ============ >>>>>
+# CODE Start ============ >>>>>
 {
   "name": "strapi",
   "private": true,
@@ -129,7 +129,7 @@ CODE Start ============ >>>>>
   },
   "license": "MIT"
 }
-<<<<<  Code End ============
+# <<<<<  Code End ============
 
 ```
 
