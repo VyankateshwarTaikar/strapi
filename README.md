@@ -22,6 +22,8 @@ Ubuntu 20.04
 
 # 🌠Install required dependancy as the 
 
+## Note: You have to use npm or yarn . Any one should be installed on the server enviroment to run strapi.
+
 sudo apt update
 
 sudo apt install -y curl gnupg2 build-essential 
@@ -56,10 +58,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt update
 
-sudo apt install -y yarn
+sudo apt install -y yarn     (optional)
 
 ## Verify the installation:
-yarn -v  # Should return 1.22.22
+yarn -v  # Should return 1.22.22      (optional)
 
 ## 👉 Checking Versions
 
@@ -67,7 +69,7 @@ node -v  # Should return v20.14.0
 
 npm -v   # Should return 10.7.0
 
-yarn -v  # Should return 1.22.22
+yarn -v  # Should return 1.22.22      (optional)
 
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/e2badbe1-9231-4bf5-8b9d-6218254f7264) 
 
@@ -81,7 +83,61 @@ sudo npm install pm2 -g
 
 cd ~
 
-npx create-strapi-app strapi --quickstart 
+npx -y create-strapi-app strapi --quickstart 
+
+
+# Start and Stop with Strapi
+
+## Firstly, you have to change the code from Package.json
+CODE Start ============ >>>>>
+{
+  "name": "strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy",
+    "stop": "kill $(lsof -t -i:1337)"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.25.1",
+    "@strapi/plugin-users-permissions": "4.25.1",
+    "@strapi/plugin-i18n": "4.25.1",
+    "@strapi/plugin-cloud": "4.25.1",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "705fbe27-9229-4b8b-ace3-8e0337e03795"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
+<<<<<  Code End ============
+
+
+🔑Go to the inside  dircetory for for your project to start , stop & restart strapi  👉ex: here is the strapi 
+
+npm run start    (To start the Npm)
+
+npm run stop  (To stop the Npm)
+
+npm run restart   (To Restart the Npm)
+ 
 
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/2bb4b416-9524-4f66-9449-55469f49ff51)
 
@@ -92,11 +148,13 @@ press Y
 
 choose 𝐬𝐤𝐢𝐩 and processed for the manual installation 
 
-## note: If you are already done with installation then you can run where the project is crearted or project is stopped
+
+
+## note: If you are already done with installation then you can run where the project is crearted or project is stopped ( Not Recommeded in Production Enviroment )
 
 inside project diretory run command 
 
-pm2 start yarn --name strapi -- develop 
+pm2 start yarn --name strapi -- develop        
 
 ![image](https://github.com/VyankateshwarTaikar/strapi/assets/102132721/caee8978-5b4e-48df-b876-2606e278ee91)
 
