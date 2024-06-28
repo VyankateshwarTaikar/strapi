@@ -89,6 +89,8 @@ npx -y create-strapi-app strapi --quickstart
 # Start and Stop with Strapi
 
 ## Firstly, you have to change the code from Package.json
+```
+
 CODE Start ============ >>>>>
 {
   "name": "strapi",
@@ -128,6 +130,8 @@ CODE Start ============ >>>>>
   "license": "MIT"
 }
 <<<<<  Code End ============
+
+```
 
 
 🔑Go to the inside  dircetory for for your project to start , stop & restart strapi  👉ex: here is the strapi 
